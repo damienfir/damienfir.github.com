@@ -10,7 +10,7 @@ title: Damien Firmenich
 - [accurate NIR-RGB image registration](http://github.com/damienfir/nir-rgb-registration)
 
 ## Personal
-[Music](http://www.digthis.ch)
+[Music](http://www.digthis.ch)  
 [Photography](http://www.flickr.com/photos/damienfir)
 
 ## Contact
