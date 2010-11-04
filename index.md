@@ -5,9 +5,12 @@ title: Damien Firmenich
 	
 # {{ page.title }}
 
-## Projects
+[CV](/resume.html)
+
+## Current Projects
 - [tripin website](http://github.com/damienfir/Tripin-website)
 - [accurate NIR-RGB image registration](http://github.com/damienfir/nir-rgb-registration)
+
 
 ## Personal
 [Music](http://www.digthis.ch)  
