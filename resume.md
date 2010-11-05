@@ -18,7 +18,7 @@ title: CV, Damien Firmenich
 
 
 ## Academic Projects
-- #### Accurate registration of RGB/IR images  
+- #### Accurate registration of RGB/IR images (ongoing)  
   LCAV (Audiovisual Communications Laboratory), EPFL - 2010
 
 
