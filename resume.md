@@ -21,6 +21,12 @@ title: CV, Damien Firmenich
 - #### Accurate registration of RGB/IR images (ongoing)  
   LCAV (Audiovisual Communications Laboratory), EPFL - 2010
 
+- #### Fluid simulation using heightmap and particle systems (ongoing)  
+  Introduction to Computer Graphics (course), EPFL - 2010
+
+- #### Peer-to-peer file sharing  
+  Programming theory and practice (course), EPFL - 2008
+
 
 ## Work Experience
 - ### Studiocraft  
