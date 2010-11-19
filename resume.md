@@ -18,7 +18,7 @@ title: CV, Damien Firmenich
 
 
 ## Academic Projects
-- #### Accurate registration of RGB/IR images (ongoing)  
+- #### Feature Detection in RGB and NIR Images (ongoing)  
   LCAV (Audiovisual Communications Laboratory), EPFL - 2010
 
 - #### Fluid simulation using heightmap and particle systems (ongoing)  

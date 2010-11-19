@@ -9,7 +9,7 @@ title: Damien Firmenich
 
 ## Current Projects
 - [tripin website](http://github.com/damienfir/Tripin-website)
-- [accurate NIR-RGB image registration](http://github.com/damienfir/nir-rgb-registration)
+- [feature detection in NIR-RGB images](http://github.com/damienfir/nir-rgb-registration)
 
 
 ## Personal
