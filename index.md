@@ -8,9 +8,8 @@ title: Damien Firmenich
 [CV](/resume.html)
 
 ## Current Projects
-- [tripin website](http://github.com/damienfir/Tripin-website)
-- [feature detection in NIR-RGB images](http://github.com/damienfir/nir-rgb-registration)
-
+- [feature detection in NIR-RGB images](http://github.com/damienfir/image-features)
+- water rendering simulation
 
 ## Personal
 [Music](http://www.digthis.ch)  
