@@ -9,11 +9,11 @@ title: CV, Damien Firmenich
 
 
 ## Education
-### EPFL
+### EPFL (CH)
 - Bachelor - Communication systems  
   2007 - current
 
-### Gymnase de Nyon
+### Gymnase de Nyon (CH)
 - Graduation 2006
 
 
@@ -21,7 +21,7 @@ title: CV, Damien Firmenich
 - #### Feature Detection in RGB and NIR Images (ongoing)  
   LCAV (Audiovisual Communications Laboratory), EPFL - 2010
 
-- #### Fluid simulation using heightmap and particle systems (ongoing)  
+- #### Real-time interactive water rendering using heightmap (ongoing)  
   Introduction to Computer Graphics (course), EPFL - 2010
 
 - #### Peer-to-peer file sharing  
@@ -39,7 +39,7 @@ title: CV, Damien Firmenich
 
 ## Skills
 ### Programming languages
-Python, C, C++, Matlab, Ruby, Shell, Scheme, Java, PHP, Javascript, HTML
+Python, C, C++, Matlab, Ruby, Shell, Scheme, Java, PHP, Javascript
 
 ### Operating systems
 Unix (Mac OS X, Linux), Windows

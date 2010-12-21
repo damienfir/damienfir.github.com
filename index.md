@@ -11,6 +11,9 @@ title: Damien Firmenich
 - [feature detection in NIR-RGB images](http://github.com/damienfir/image-features)
 - water rendering simulation
 
+<!-- ## Past projects
+- -->
+
 ## Personal
 [Music](http://www.digthis.ch)  
 [Photography](http://www.flickr.com/photos/damienfir)
