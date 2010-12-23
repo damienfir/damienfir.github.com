@@ -21,7 +21,7 @@ title: CV, Damien Firmenich
 - #### Feature Detection in RGB and NIR Images (ongoing)  
   LCAV (Audiovisual Communications Laboratory), EPFL - 2010
 
-- #### Real-time interactive water rendering using heightmap (ongoing)  
+- #### Real-time interactive water rendering using heightmap [[PDF](/docs/firmenich_water_rendering.pdf "Water rendering pdf")]
   Introduction to Computer Graphics (course), EPFL - 2010
 
 - #### Peer-to-peer file sharing  
