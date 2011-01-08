@@ -18,7 +18,7 @@ title: CV, Damien Firmenich
 
 
 ## Academic Projects
-- #### Feature detection in RGB and NIR images [[PDF](https://github.com/damienfir/damienfir.github.com/firmenich_water_rendering2010.pdf "Feature detection PDF")]
+- #### Feature detection in RGB and NIR images [[PDF](https://github.com/damienfir/damienfir.github.com/firmenich_feature_detection_nir2011.pdf "Feature detection PDF")]
   IVRG (Images and Visual Representation Group), EPFL - 2011
 
 - #### Real-time interactive water rendering using heightmap [[PDF](https://github.com/damienfir/damienfir.github.com/firmenich_water_rendering2010.pdf "Water rendering report PDF")]
