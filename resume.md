@@ -18,8 +18,8 @@ title: CV, Damien Firmenich
 
 
 ## Academic Projects
-- #### Feature Detection in RGB and NIR Images (ongoing)  
-  LCAV (Audiovisual Communications Laboratory), EPFL - 2010
+- #### Feature detection in RGB and NIR images [[PDF](/docs/firmenich_feature_detection_nir2011.pdf)]
+  LCAV (Audiovisual Communications Laboratory), EPFL - 2011
 
 - #### Real-time interactive water rendering using heightmap [[PDF](/docs/firmenich_water_rendering.pdf "Water rendering pdf")]
   Introduction to Computer Graphics (course), EPFL - 2010

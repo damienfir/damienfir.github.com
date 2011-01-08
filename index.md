@@ -7,11 +7,12 @@ title: Damien Firmenich
 
 [CV](/resume.html)
 
-## Current Projects
-- [feature detection in NIR-RGB images](http://github.com/damienfir/image-features)
+<!-- ## Current Projects -->
+
 
 ## Past projects
-- Water rendering simulation [[PDF](/docs/firmenich_water_rendering.pdf "Water rendering pdf")]
+- Feature detection in NIR-RGB images [[code](http://github.com/damienfir/image-features)]  [[PDF](/docs/firmenich_feature_detection_nir2011.pdf)]
+- Water rendering simulation [[PDF](/docs/firmenich_water_rendering2010.pdf "Water rendering pdf")]
 
 ## Personal
 [Music](http://www.digthis.ch)  
