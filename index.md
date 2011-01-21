@@ -21,5 +21,5 @@ title: Damien Firmenich
 ## Contact
 Damien Firmenich  
 EPFL, IC, Communication Systems - Bachelor  
-Route de Lausanne 11, 1260 Nyon, CH  
+Rue Marterey 28, 1005 Lausanne, CH  
 <damien.firmenich@epfl.ch>
