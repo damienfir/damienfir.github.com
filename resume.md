@@ -39,7 +39,7 @@ title: CV, Damien Firmenich
 
 ## Skills
 ### Programming languages
-Python, C, C++, Matlab, Ruby, Shell, Scheme, Java, PHP, Javascript
+Python, C, C++, Matlab, Ruby, Shell, Scheme, PHP, Javascript
 
 ### Operating systems
 Unix (Mac OS X, Linux), Windows
