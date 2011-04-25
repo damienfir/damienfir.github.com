@@ -12,7 +12,7 @@ title: Damien Firmenich
 
 ## Past projects
 - Feature detection in NIR-RGB images [[code](http://github.com/damienfir/image-features)]  [[PDF](http://cloud.github.com/downloads/damienfir/damienfir.github.com/firmenich_feature_detection_nir2011.pdf "Feature detection PDF")]
-- Water rendering simulation [[PDF](http://cloud.github.com/downloads/damienfir/damienfir.github.com/firmenich_water_rendering2010.pdf "Water rendering pdf")]
+- Water rendering simulation [[code](https://github.com/damienfir/water_rendering)] [[PDF](http://cloud.github.com/downloads/damienfir/damienfir.github.com/firmenich_water_rendering2010.pdf "Water rendering pdf")]
 
 ## Personal
 [Music](http://www.digthis.ch)  
