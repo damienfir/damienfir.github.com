@@ -1,15 +1,17 @@
+#!/usr/bin/env python
+
 import re
 
-f = open('/Users/damien/EPFL/links.txt', 'r')
+f1 = open('/Users/damien/EPFL/links.txt', 'r')
 res = {}
 current = ''
 md = ''
 
-title = re.compile('^\[(.*?)\]\w*$')
-link = re.compile('^\[?(.*?)\]?\<(.*?)\>\w*$')
+title = re.compile(r'^\[(.*?)\]\w*$')
+link = re.compile(r'^\[?(.*?)\]?\<(.*?)\>\w*$')
 
 # extract links
-for l in f:
+for l in f1:
 	m = title.match(l)
 	if m:
 		current = m.group(1)
@@ -22,16 +24,20 @@ for l in f:
 for subject, links in res.iteritems():
 	md += '## %s\n' % subject
 	for l in links:
-		md += '- [%s %s](%s "%s")\n' % (l[0], l[1], l[1], l[0])
+		if l[0]:
+			md += '- [%s](%s "%s") <small>%s</small>\n' % (l[0], l[1], l[0], l[1])
+		else:
+			md += '- [%s](%s)\n' % (l[1], l[1])
 	md += '\n'
 
+f1.close()
 
-print md
 
 # into the file
-# f = open('resources.md', 'r')
-# a = re.match('([.\n]*\<!--start--\>)', f.read(), re.M)
-# 
-# f = open('resources.md', 'w')
-# f.write(a.group(1) + '\n\n' + md)
-# f.close()
+f2 = open('resources.md', 'r')
+a = re.sub(r'\<!--start--\>(.|\s)*?\<!--end--\>', '<!--start-->\n%s\n<!--end-->' % md, f2.read(), flags=re.M)
+f2.close()
+
+f3 = open('resources.md', 'w')
+f3.write(a)
+f3.close()
