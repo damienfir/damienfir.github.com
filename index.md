@@ -20,7 +20,8 @@ title: Damien Firmenich
 
 ## Personal
 [Music](http://www.digthis.ch)  
-[Photography](http://www.flickr.com/photos/damienfir)
+[Photography](http://www.flickr.com/photos/damienfir)  
+[Learning Resources](resources.html)
 
 ## Contact
 Damien Firmenich  
