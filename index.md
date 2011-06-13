@@ -7,7 +7,8 @@ title: Damien Firmenich
 
 [CV](/resume.html)
 
-<!-- ## Current Projects -->
+## Current Projects
+- Facial Expression Recognition
 
 
 ## Past projects
