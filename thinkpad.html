@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+
+	<meta charset="utf-8">
+	<title>[pocus] thinkpad</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="/stylesheets/bootstrap-1.0.0.css">
+	<link rel="stylesheet" href="/stylesheets/custom.css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+	<div class="container">
+		<a href="/" id="homelink">home</a>
+
+		<h2>Thinkpad T420</h2>
+<p>Some compatibility issues/tips I got when running Linux (Arch Linux in my case) on a Thinkpad T420 (i7, Nvidia).</p>
+<p>You can check out the <a href="https://wiki.archlinux.org/index.php/Lenovo_Thinkpad_T420">Arch Linux Wiki on Thinkpad T420</a> for other information.</p>
+<h3>fan control</h3>
+<p>Install <strong>thinkfan</strong> to automatically manage fan speed (and configure your own speed scale). To have it work, write</p>
+<pre><code>options thinkpad_acpi fan_control=1
+</code></pre>
+<p>in <code>/etc/modprob.d/modprobe.conf</code>, reload the <strong>thinkpad_acpi</strong> module and restart <strong>thinkfan</strong> with <code>rc.d restart thinkfan</code>.</p>
+<h3>nvidia/intel video</h3>
+<p>Setting up Xorg for dual video cards. In my case, Nvidia NVS 4200M (1GB) and Intel Integrated HD Graphics 3000.</p>
+<p>Optimus is not yet supported on Linux. Use Bumblebee to enable GPU utilization in parallel.
+The option Nvidia Optimus must be enabled in the BIOS for the <strong>nvidia</strong> module to be loaded.</p>
+<p>The monitor settings should be managed by <strong>xrandr</strong>. If a GUI is needed, use <strong>arandr</strong>.</p>
+<h3>crontab</h3>
+<h3>suspend</h3>
+<h3>copy/paste</h3>
+<h3 />
+
+		<div id="lastmod">Last modification: Wed Sep  7 14:45:50 2011</div>
+		<!-- <center><a href="http://www.catb.org/hacker-emblem/"><img src="http://www.catb.org/hacker-emblem/glider.png"></a></center> -->
+	</div>
+</body>
+</html>
