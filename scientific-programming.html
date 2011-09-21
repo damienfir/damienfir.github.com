@@ -29,11 +29,20 @@
 <p><strong>NumPy</strong> has an interface for ctypes compatibility with <code>ndarray</code>.<br />
 The <code>ndpointer</code> object needs to be initiated with a shape (tuple) to work, or the ndarray must be passed by reference with prior initialization (i.e. <code>numpy.empty()</code>). <code>ndpointer</code> should be used only for direct <code>argtypes</code> or <code>restype</code>, not in <code>Structure</code>s and  <code>Union</code>s.<br />
 Object passed by reference to a C function cannot have their address changed the usual way.</p>
+<h4>structure (with Python)</h4>
+<p>The code should be easily runnable by other people. The structure should expose an API for using the new methods.</p>
+<p>Exposed components:
+- <code>api.py</code>
+- <code>tests.py</code>
+- <code>gui.py</code>
+- <code>run.py</code></p>
+<p>The <code>api.py</code> should be the principal entry point for the methods. All other files should import this one and no other.</p>
+<p>When designing a new method, the existing tools should be composed of library functions (i.e. from <strong>NumPy/SciPy</strong>, <strong>matplotlib</strong>, etc...). Algorithms can be speed up using <strong>Cython</strong> for speed-critical parts.</p>
 <h3>general tips</h3>
 <p>When coding with C and dynamic allocation, it is easier to avoid freeing the memory when debugging. That way there is less segfaults, and the code can be cleaned-up later.<br />
 When using incrementing variables, always initiate them to 0 <em>just before the loop</em>.</p>
 
-		<div id="lastmod">Last modification: Sun Sep  4 16:14:27 2011</div>
+		<div id="lastmod">Last modification: Wed Sep 14 14:55:36 2011</div>
 		<!-- <center><a href="http://www.catb.org/hacker-emblem/"><img src="http://www.catb.org/hacker-emblem/glider.png"></a></center> -->
 	</div>
 
