@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+
+	<meta charset="utf-8">
+	<title>[damien firmenich] android</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="/stylesheets/bootstrap-1.0.0.css">
+	<link rel="stylesheet" href="/stylesheets/custom.css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+	<div class="container">
+		<a href="/" id="homelink">home</a>
+
+		<h2>Android</h2>
+<p>All the informations below are tested with a <strong>Samsung Galaxy S II</strong> and should be valid with most of the other
+Android-based phone out there.</p>
+<h3>Rooting and ROMs</h3>
+<p>The general structure of an Android phone is arranged the following way:</p>
+<ul>
+<li>The <strong>kernel</strong> which is used to interface with the hardware. You can <em>flash</em> (replace) the kernel
+  with a modified one which is rooted (allows the applications to used superuser privileges)</li>
+<li>The <strong>ROM</strong> which the user uses to interface with the kernel. This is the software that can be
+  changed to replace the stock ROM and add features to the Android OS.</li>
+</ul>
+<p>I recommend going to <a href="http://forum.xda-developers.com/forumdisplay.php?f=1055">http://forum.xda-developers.com/forumdisplay.php?f=1055</a> to find kernels and
+ROMs.</p>
+<h3>APK installation</h3>
+<p>The <strong>adb</strong> utility is useful for interfacing with the phone directly from a computer. It is used to
+copy file to/from the phone and install applications (.apk) remotely.</p>
+<p>Installing an application involves the following command:
+    apk install ***.apk</p>
+<p>If it is a system application, you need to <em>push</em> (copy) the entire tree application to the phone:
+    apk push system/ system/</p>
+
+		<div id="lastmod">Last modification: Thu Nov  3 08:49:15 2011</div>
+		<!-- <center><a href="http://www.catb.org/hacker-emblem/"><img src="http://www.catb.org/hacker-emblem/glider.png"></a></center> -->
+	</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-69644-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
