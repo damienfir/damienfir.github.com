@@ -1,4 +1,0 @@
----
----
-
-Damien Firmenich
