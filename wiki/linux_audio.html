@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-69644-13']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h2 id="linux-audio-resources">Linux Audio resources</h2>
+  <h4 id="setup">Setup</h4>
+  <p>Access to the devices is made via ALSA, but ALSA has mutliple parts including a userspace API, which you are not required to use.</p>
+  <p><a href="https://www.linux.com/news/hardware/drivers/8100-why-you-should-care-about-pulseaudio-and-how-to-start-doing-it">https://www.linux.com/news/hardware/drivers/8100-why-you-should-care-about-pulseaudio-and-how-to-start-doing-it</a></p>
+  <p>Configure Pulseaudio to lie between ALSA and the audio application.</p>
+  <p>Apparently Jack cannot output to Pulseaudio, turnaround required. Some module is available in Pulseaudio to take Jack as a source <code>pactl load-module module-jack-source</code>. <a href="http://www.whatsmykarma.com/blog/?p=478">http://www.whatsmykarma.com/blog/?p=478</a></p>
+  <h4 id="instruments">Instruments</h4>
+  <p>Hard to find a good .gig library.</p>
+  <p>Cannot find a player for sfz.</p>
+  <p>Play VST instruments using <code>dssi-vst</code>. Not the best way because VST plugins fail to load. Use <code>festige</code> instead. It features a GUI and loads VST using <code>fst</code>. <code>Kontakt</code> isn't working well, can't install instruments with <code>wine</code>. Solve the MIDI problem with <code>a2jmidid -e</code></p>
+  <p>Good .sf2 instruments at DSK.</p>
+  <p>Find VSTi here: - <a href="http://www.vst4free.com">http://www.vst4free.com</a> - <a href="http://www.genuinesoundware.com">http://www.genuinesoundware.com</a> - <a href="http://www.johnrofrano.com/vstinstruments.htm">http://www.johnrofrano.com/vstinstruments.htm</a> - <a href="http://www.majken.se/">http://www.majken.se/</a> - <a href="http://www.dskmusic.com/">http://www.dskmusic.com/</a> - <a href="http://producertoolz.com/category/vsts/">http://producertoolz.com/category/vsts/</a> - <a href="http://illformed.org/plugins/glitch/">http://illformed.org/plugins/glitch/</a> - <a href="http://kunz.corrupt.ch/products">http://kunz.corrupt.ch/products</a> - <a href="http://www.kvraudio.com">http://www.kvraudio.com</a> (search) - <a href="http://www.gersic.com/plugins/">http://www.gersic.com/plugins/</a></p>
+  <p>paid - <a href="http://www.applied-acoustics.com/loungelizard/overview">http://www.applied-acoustics.com/loungelizard/overview</a> - <a href="http://www.powerdrumkit.com/">http://www.powerdrumkit.com/</a></p>
+  <h4 id="studio">Studio</h4>
+  <p>mixer - non-mixer <a href="http://non-mixer.tuxfamily.org/">http://non-mixer.tuxfamily.org/</a> sequencer - non-sequencer - harmonySEQ synth - zynaddsubfx - csound <a href="http://www.csounds.com/frontends/">http://www.csounds.com/frontends/</a> session - non-session manager - ladish</p>
+  <h4 id="irc">IRC</h4>
+  <p>##linuxaudio<br />#LAD<br />#ardour</p>
+  <h4 id="links">Links</h4>
+  <ul>
+  <li><a href="http://petri-foo.sourceforge.net/">http://petri-foo.sourceforge.net/</a> Simple sampler</li>
+  <li><a href="http://www.linuxmusicians.com/">http://www.linuxmusicians.com/</a> Linux audio forums</li>
+  <li><a href="http://quicktoots.linux-audio.com/">http://quicktoots.linux-audio.com/</a> Tutorial resource</li>
+  <li><a href="http://archaudio.org/">http://archaudio.org/</a> Audio software packages for Archlinux</li>
+  <li><a href="http://linux-audio.com/">http://linux-audio.com/</a> General resources</li>
+  <li><a href="http://lac.linuxaudio.org/">http://lac.linuxaudio.org/</a> Linux audio conferences information</li>
+  <li><a href="http://gamesoundcon.com/">http://gamesoundcon.com/</a> Conference on game audio design</li>
+  <li><a href="http://wiki.linuxaudio.org/wiki/start">http://wiki.linuxaudio.org/wiki/start</a> Plenty of resources</li>
+  <li><a href="https://github.com/harryhaaren/openAudioProgrammingTutorials">https://github.com/harryhaaren/openAudioProgrammingTutorials</a> tutorials</li>
+  <li><a href="http://lesitedeburnie.free.fr/lalistedeburnie1-en.html">http://lesitedeburnie.free.fr/lalistedeburnie1-en.html</a> VST plugins</li>
+  <li><a href="http://www.louigiverona.ru/?page=projects&amp;s=writings&amp;t=linux&amp;a=linux_harmonyseq">http://www.louigiverona.ru/?page=projects&amp;s=writings&amp;t=linux&amp;a=linux_harmonyseq</a> HarmonySEQ</li>
+  <li><a href="http://www.linuxjournal.com/users/dave-phillips">http://www.linuxjournal.com/users/dave-phillips</a> Dave Phillips homepage</li>
+  </ul>
+  <p>General</p>
+  <ul>
+  <li><a href="http://www.linuxmao.org">http://www.linuxmao.org</a></li>
+  <li><a href="http://wiki.linuxmusicians.com">http://wiki.linuxmusicians.com</a></li>
+  <li><a href="http://lievenmoors.github.com">http://lievenmoors.github.com</a></li>
+  <li><a href="http://hubpages.com/hub/Recording-in-Linux-aka-Free-and-Open-Source-Digital-Audio-Workstation">http://hubpages.com/hub/Recording-in-Linux-aka-Free-and-Open-Source-Digital-Audio-Workstation</a></li>
+  </ul>
+  <p>Sounds</p>
+  <ul>
+  <li><a href="http://www.fruityclub.net/ressources-samples-soundfonts/banques-sonores-le-meilleur-du-net">http://www.fruityclub.net/ressources-samples-soundfonts/banques-sonores-le-meilleur-du-net</a></li>
+  </ul>
+  <p>Theory</p>
+  <ul>
+  <li><a href="http://www.whitakerblackall.com/blog/music-theory-for-beginners/">http://www.whitakerblackall.com/blog/music-theory-for-beginners/</a></li>
+  </ul>
+  <p>Sounds</p>
+  <ul>
+  <li><a href="http://www.hammersound.net">http://www.hammersound.net</a></li>
+  <li><a href="http://www.soundfonts.it/?a=soundfonts">http://www.soundfonts.it/?a=soundfonts</a></li>
+  <li><a href="http://www.synthfont.com/links_to_soundfonts.html">http://www.synthfont.com/links_to_soundfonts.html</a> (repertory)</li>
+  <li><a href="http://www.sonivoxmi.com/index.asp">http://www.sonivoxmi.com/index.asp</a> (paid)</li>
+  <li><a href="http://www.soundsonline.com">http://www.soundsonline.com</a> (paid)</li>
+  <li><a href="http://www.vipzone-samples.com">http://www.vipzone-samples.com</a> (paid)</li>
+  <li><a href="http://www.ntonyx.com/sf.htm">http://www.ntonyx.com/sf.htm</a> (paid)</li>
+  <li><a href="https://www.digitalsoundfactory.com">https://www.digitalsoundfactory.com</a> (paid)</li>
+  <li><a href="http://www.modernbeats.com">http://www.modernbeats.com</a> (paid)</li>
+  </ul>
+  <p>Setup</p>
+  <ul>
+  <li><a href="http://apps.linuxaudio.org/wiki/seq24togglemiditutorial">http://apps.linuxaudio.org/wiki/seq24togglemiditutorial</a></li>
+  </ul>
+	</div>
+</body>
+</html>
