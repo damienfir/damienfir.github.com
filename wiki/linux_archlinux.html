@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-69644-13']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h3 id="arch-linux-configuration">Arch Linux configuration</h3>
+  <h4 id="xorg">Xorg</h4>
+  <p>If issues with Xorg and window manager, clear cache (~/.cache).</p>
+  <h4 id="audio">Audio</h4>
+  <p>For <code>pulseaudio</code> to work, <code>xfce</code> must be launched using <code>xinit</code>. Gstreamer problem with <code>pulseaudio</code>: need to install gstreamer plugins</p>
+  <h4 id="power-control">Power control</h4>
+  <p>Problem of authorization for suspend, shutdown or reboot: remove <code>ck-launch-session</code> from .xinitrc</p>
+  <h4 id="windows-dual-boot">Windows dual boot</h4>
+  <p>Modify menu.lst to trick Windows into thinking it's on the first hard drive.</p>
+  <p>Make a bootable USB drive from Windows install iso: use <code>unetbootin</code> version 494, <code>winusb</code> didn't work.</p>
+  <p>Dual boot with Windows causes problem with the bootloader. Need to reinstall bootloader if Windows was installed on the same HDD after Linux.</p>
+  <h4 id="customization">Customization</h4>
+  <p>Terminal color generator - <a href="http://ciembor.github.com/4bit/">http://ciembor.github.com/4bit/</a> example from domac - <a href="https://github.com/domac/archlinux/tree/master/">https://github.com/domac/archlinux/tree/master/</a> example from aaron griffin - <a href="http://phraktured.net/config/">http://phraktured.net/config/</a> dot file sharing - <a href="http://dotshare.it/">http://dotshare.it/</a> mako config - <a href="http://mako.cc/scripts/">http://mako.cc/scripts/</a> xcolors - <a href="http://xcolors.net/">http://xcolors.net/</a></p>
+  <p>ZSH - <a href="http://friedcpu.wordpress.com/2007/07/24/zsh-the-last-shell-youll-ever-need/">http://friedcpu.wordpress.com/2007/07/24/zsh-the-last-shell-youll-ever-need/</a></p>
+  <h4 id="bluetooth-headset">Bluetooth headset</h4>
+  <p>Enable bluetooth in BIOS<br />install bluez and blueman<br />activate blutooth discovery mode on headset<br />pair using blueman-manager<br />add the following to /etc/bluetooth/audio.conf under [General]<br /> Enable=Socket<br />restart bluetooth daemon<br />select device in pavucontrol</p>
+  <hr />
+  <h4 id="thinkpad">ThinkPad</h4>
+  <h5 id="fan-control">Fan control</h5>
+  <p>Not necessary, there is a hardware controller. This method only allows manual definition of fan speeds for CPU temperatures.</p>
+  <p>Install <code>thinkfan</code> to automatically manage fan speed (and configure your own speed scale). To have it work, write</p>
+  <pre><code>options thinkpad_acpi fan_control=1</code></pre>
+  <p>in <code>/etc/modprob.d/modprobe.conf</code>, reload the <code>thinkpad_acpi</code> module and restart <code>thinkfan</code> with <code>rc.d restart thinkfan</code>.</p>
+  <p>Temperature location may vary. Also, load sensors (from lm_sensors)_, and configure with ̀sensors` to detect them.</p>
+  <h5 id="video-card">Video card</h5>
+  <p>Setting up Xorg for dual video cards. In my case, Nvidia NVS 4200M (1GB) and Intel Integrated HD Graphics 3000.</p>
+  <p>Optimus is not yet supported on Linux. Use Bumblebee to enable GPU utilization in parallel. The option Nvidia Optimus must be enabled in the BIOS for the <code>nvidia</code> module to be loaded.</p>
+  <p>The monitor settings should be managed by <code>xrandr</code>. If a GUI is needed, use <code>arandr</code>.</p>
+	</div>
+</body>
+</html>
