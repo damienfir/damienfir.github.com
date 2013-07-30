@@ -6,6 +6,23 @@
 
     <title>Damien Firmenich - {{ page.title }}</title>
 
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-glyphicons.css">
+</head>
+<body style="padding-top: 10px">
+	<div class="container">
+		<div class="navbar">
+			<span class="navbar-brand">Damien Firmenich</span>
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="/#projects">Projects</a></li>
+				<li><a href="/#courses">Courses</a></li>
+				<li><a href="/#wiki">Wiki</a></li>
+				<li><a href="/#contact">Contact</a></li>
+			</ul>
+		</div>
+		{{ content }}
+	</div>
+	
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -19,13 +36,5 @@
 	  })();
 
 	</script>
-
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/bootstrap-glyphicons.css">
-</head>
-<body>
-	<div class="container">
-		{{ content }}
-	</div>
 </body>
 </html>

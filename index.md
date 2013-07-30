@@ -3,8 +3,7 @@ layout: template
 title: 
 ---
 
-## Damien Firmenich
-
+<a name="projects"></a>
 ### Academic projects
 
 [Talking to the Camera](), Damien Firmenich, Gokhan Yildirim, Sabine Susstrink, Master semester project 2012
@@ -14,7 +13,7 @@ title:
 [Multispectral Interest Points for RGB-NIR Image Registration](projects/features), D. Firmenich, M. Brown, S. Süsstrunk, ICIP 2011
 
 
-
+<a name="courses"></a>
 ### Courses
 
 [Master courses](courses/master.html)  
@@ -22,13 +21,9 @@ title:
 [Course projects](courses/projects.html)  
 
 
-### Wiki
-
-[index](wiki/)  
-
 ----
-
-Damien Firmenich [[cv]()]
+<a name="contact"></a>
+[curriculum vitae]()
 
 fir dot damien at gmail dot com
 
