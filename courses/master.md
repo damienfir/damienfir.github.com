@@ -1,3 +1,8 @@
+---
+layout: template
+title: Master courses
+---
+
 ## Courses
 
 ### Master

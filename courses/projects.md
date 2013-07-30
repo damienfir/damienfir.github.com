@@ -1,3 +1,8 @@
+---
+layout: template
+title: Course projects
+---
+
 ### Course projects
 
 #### 2013

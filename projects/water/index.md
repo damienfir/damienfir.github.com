@@ -1,3 +1,8 @@
+---
+layout: template
+title: Water rendering using heightmaps
+---
+
 ## Water rendering using heightmaps
 ![](water.jpg)
 

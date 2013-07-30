@@ -1,6 +1,6 @@
 ---
 layout: template
-title: Damien Firmenich
+title: 
 ---
 
 ## Damien Firmenich
@@ -17,9 +17,9 @@ title: Damien Firmenich
 
 ### Courses
 
-[Master courses](courses/master)  
-[Bachelor courses](courses/bachelor)  
-[Course projects](courses/projects)  
+[Master courses](courses/master.html)  
+[Bachelor courses](courses/bachelor.html)  
+[Course projects](courses/projects.html)  
 
 
 ### Wiki

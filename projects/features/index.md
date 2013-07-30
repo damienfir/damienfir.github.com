@@ -1,3 +1,8 @@
+---
+layout: template
+title: Multispectral Interest Points for RGB-NIR Image Registration
+---
+
 ## Multispectral Interest Points for RGB-NIR Image Registration
 ![](multispectral.jpg)
 

@@ -1,3 +1,8 @@
+---
+layout: template
+title: Mapping of facial Representation
+---
+
 ## Mapping of Facial Representations 
 ![](faces.jpg)
 
