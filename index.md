@@ -4,6 +4,10 @@ title:
 ---
 
 <a name="projects"></a>
+### Publications
+
+[Multispectral Interest Points for RGB-NIR Image Registration](projects/features), D. Firmenich, M. Brown, S. Süsstrunk, ICIP 2011
+
 ### Academic projects
 
 [Talking to the Camera](), Damien Firmenich, Gokhan Yildirim, Sabine Susstrink, Master semester project 2012
