@@ -27,9 +27,8 @@ title:
 
 fir dot damien at gmail dot com
 
-<a href=""><img src="/img/ico/picons04.png" /></a>
-<a href=""><img src="/img/ico/picons11.png" /></a>
-<a href=""><img src="/img/ico/picons06.png" /></a>
+<a href="https://github.com/damienfir">GitHub</a>  
+<a href="http://www.flickr.com/photos/damienfir/">Flickr</a>
 
 ----
 
