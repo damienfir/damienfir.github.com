@@ -27,6 +27,8 @@ title:
 
 ----
 <a name="contact"></a>
+#### Contact
+
 [curriculum vitae]()
 
 fir dot damien at gmail dot com
