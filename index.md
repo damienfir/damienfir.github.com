@@ -27,6 +27,10 @@ title:
 
 fir dot damien at gmail dot com
 
+<a href=""><img src="/img/ico/picons04.png" /></a>
+<a href=""><img src="/img/ico/picons11.png" /></a>
+<a href=""><img src="/img/ico/picons06.png" /></a>
+
 ----
 
 <small>last update: July 2013</small>
