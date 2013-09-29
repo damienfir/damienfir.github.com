@@ -25,6 +25,11 @@ title:
 [Course projects](courses/projects.html)  
 
 
+<a name="pages"></a>
+### Pages
+
+[light-field photography](lightfield)
+
 ----
 <a name="contact"></a>
 #### Contact
