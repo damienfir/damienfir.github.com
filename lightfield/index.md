@@ -13,12 +13,5 @@ The information on this page is the result of an ongoing project on light-field 
 - [lfpsplitter](https://github.com/nrpatel/lfptools)  
 Work with .lfp files
 
-#### Calibration
-
-
-#### OECF
-
-
-## Raytrix
-
-Details to come
+### Calibration
+Calibration data is backuped the first time you synchronize the Lytro camera with the Lytro desktop software. On Windows, those files go in the folder `/Users/*/AppData/Local/Lytro` under the names `data.C.#`. They contain files which can be extracted using `lfpsplitter`.
