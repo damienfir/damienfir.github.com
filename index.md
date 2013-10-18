@@ -34,7 +34,7 @@ title:
 <a name="contact"></a>
 #### Contact
 
-[curriculum vitae]()
+[curriculum vitae](/damien-firmenich.pdf)
 
 fir dot damien at gmail dot com
 
