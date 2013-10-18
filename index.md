@@ -43,4 +43,4 @@ fir dot damien at gmail dot com
 
 ----
 
-<small>last update: July 2013</small>
+<small>last update: October 2013</small>
