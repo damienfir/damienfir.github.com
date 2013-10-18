@@ -28,7 +28,7 @@ title:
 <a name="pages"></a>
 ### Pages
 
-[light-field photography](lightfield)
+[Light-field photography](lightfield)
 
 ----
 <a name="contact"></a>
