@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Decoding light field from Lytro lenselet images
+date: 2013-10-17
 ---
 
 
 ### Decoding Lytro files
-_{{ page.date }}_
 
-_Information given here were first published by [Nirav Patel][http://eclecti.cc/computervision/reverse-engineering-the-lytro-lfp-file-format]._
+_Information given here were first published by [Nirav Patel](http://eclecti.cc/computervision/reverse-engineering-the-lytro-lfp-file-format)._
 
 Most of the metadata needed to decode a raw Lytro image is included in the `.lfp` container that is obtainable by exporting the image from the Lytro desktop software.
 
