@@ -5,6 +5,7 @@ title: Decoding light field from Lytro lenselet images
 
 
 ### Decoding Lytro files
+_{{ page.date }}_
 
 _Information given here were first published by [Nirav Patel][http://eclecti.cc/computervision/reverse-engineering-the-lytro-lfp-file-format]._
 
@@ -41,6 +42,3 @@ Given that micro lens sampling grid is hexagonal, we cannot sampling the light f
 The first step is to find the centers of every micro image (which are the images of each micro lens on the sensor). The coordinates for the center of the image extracted earlier gives the origin of the hexagonal lattice. From that point, all we have to use are the basis vectors. We can get the centers of each micro image by bulding the grid from those basis vectors, with coordinates that cover the whole image.
 
 Once we extract the centers of each micro image, we can directly build a 11x11 grid (from -5 to +5 for x and y directions) for each of them, which will give us the relative coordinates of each pixel within each micro image.
-
-
-
