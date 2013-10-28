@@ -2,6 +2,7 @@
 layout: post
 title: Decoding light field from Lytro lenselet images
 date: 2013-10-17
+category: lytro
 ---
 
 

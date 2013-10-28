@@ -3,6 +3,7 @@ layout: template
 title: Blog
 ---
 
-{% for post in site.posts %}
+#### Lytro
+{% for post in site.categories.lytro %}
 - [{{ post.title }}]({{ post.url }}) [{{ post.date | date_to_string }}]
 {% endfor %}

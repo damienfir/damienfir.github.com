@@ -1,6 +1,6 @@
 ---
 layout: template
-title: 
+title: Damien Firmenich
 ---
 
 <a name="projects"></a>
@@ -24,11 +24,6 @@ title:
 [Bachelor courses](courses/bachelor.html)  
 [Course projects](courses/projects.html)  
 
-
-<a name="pages"></a>
-### Pages
-
-[Light-field photography](lightfield)
 
 ----
 <a name="contact"></a>
