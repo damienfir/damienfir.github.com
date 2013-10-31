@@ -9,10 +9,11 @@
 
 		{{ content }}
 
-		<div class="well">
-			Posted on <strong>{{ page.date | date_to_string }}</strong><br />
-			Updated on <strong>{{ site.time | date_to_string }}</strong>
-		</div>
+		<hr />
+		<small> {{ page.date | date_to_string }}<br />
+			<em>[updated {{ site.time | date_to_string }}]</em></small>
+
+
 	</div>
 
 {% include footer.html %}
