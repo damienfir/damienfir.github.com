@@ -10,6 +10,8 @@ title: Damien Firmenich
 
 ### Academic projects
 
+[Frequency Response of a Plenoptic Camera](projects/plenoptic), Damien Firmenich, Loïc Baboulaz, Sabine Susstrink, Master Thesis, Fall 2013
+
 [Talking to the Camera](), Damien Firmenich, Gokhan Yildirim, Sabine Susstrink, Master semester project 2012
 
 [Mapping of Facial Representations](projects/faces), Damien Firmenich, Sofien Bouaziz, Master semester project 2011
