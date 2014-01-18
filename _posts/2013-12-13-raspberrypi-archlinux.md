@@ -24,7 +24,7 @@ The SD Card might be larger than 2GB, in which case it is recommended to resize 
 fdisk /dev/mmcblk0
 ```
 - If there is 3 partitions, delete the partition 2 with the command `d` (the last partition will be deleted too because it is contained into partition 2)
-- Add a partition with the command `a`, type Extended, with default block values.
+- Add a partition with the command `n`, type Extended, with default block values.
 - Add another partition, type Logical, with default block values.
 - Save to disk with the command `w`
 - Reboot by typing `reboot` (you may have to unplug and re-plug the power cord)
