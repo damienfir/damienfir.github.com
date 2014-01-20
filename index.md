@@ -31,7 +31,7 @@ title: Damien Firmenich
 <a name="contact"></a>
 #### Contact
 
-[curriculum vitae](/damien-firmenich.pdf)
+[curriculum vitae](https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/damien-firmenich.pdf)
 
 fir dot damien at gmail dot com
 
