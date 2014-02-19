@@ -10,13 +10,13 @@ title: Damien Firmenich
 
 ### Academic projects
 
-[Spatial Frequency Response of a Plenoptic Camera](projects/plenoptic), Damien Firmenich, Loïc Baboulaz, Sabine Susstrink, Master Thesis, Fall 2013
+[Spatial Frequency Response of a Plenoptic Camera](projects/lightfield), Damien Firmenich, [Loïc Baboulaz](http://lcav.epfl.ch/page-77949-en.html), Sabine Süsstrink, Master Thesis, January 2014
 
-[Talking to the Camera](), Damien Firmenich, Gokhan Yildirim, Sabine Susstrink, Master semester project 2012
+[Talking to the Camera](), Damien Firmenich, Gokhan Yildirim, Sabine Süsstrink, Master semester project 2012
 
 [Mapping of Facial Representations](projects/faces), Damien Firmenich, Sofien Bouaziz, Master semester project 2011
 
-[Multispectral Interest Points for RGB-NIR Image Registration](projects/features), D. Firmenich, M. Brown, S. Süsstrunk, ICIP 2011
+[Multispectral Interest Points for RGB-NIR Image Registration](projects/features), Damien Firmenich, [Matthew Brown](http://www.cs.bath.ac.uk/brown/research/research.html), [Sabine Süsstrunk](http://ivrg.epfl.ch/people/susstrunk), ICIP 2011
 
 
 <a name="courses"></a>
@@ -40,4 +40,4 @@ fir dot damien at gmail dot com
 
 ----
 
-<small>last update: October 2013</small>
+<small>last update: February 2014</small>
