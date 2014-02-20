@@ -2,7 +2,7 @@
 layout: post
 title: Information about Lytro .lfp metadata files
 date: 2013-10-29
-category: lytro
+category: light-field
 ---
 
 With each picture taken with the Lytro comes a JSON metadata file. It provides information about the exposure parameters, calibration data, RAW format and more.
