@@ -4,11 +4,13 @@ title: Damien Firmenich
 ---
 
 <a name="projects"></a>
-### Publications
+### <span class="glyphicon glyphicon-book"></span> Publications
 
 [Multispectral Interest Points for RGB-NIR Image Registration](projects/features), D. Firmenich, M. Brown, S. Süsstrunk, ICIP 2011
 
-### Academic projects
+---
+
+### <span class="glyphicon glyphicon-bookmark"></span> Academic projects
 
 [Spatial Frequency Response of a Plenoptic Camera](projects/lightfield), Damien Firmenich, [Loïc Baboulaz](http://lcav.epfl.ch/page-77949-en.html), Sabine Süsstrink, Master Thesis, January 2014
 
@@ -20,16 +22,18 @@ title: Damien Firmenich
 
 [Multispectral Interest Points for RGB-NIR Image Registration](projects/features), Damien Firmenich, [Matthew Brown](http://www.cs.bath.ac.uk/brown/research/research.html), [Sabine Süsstrunk](http://ivrg.epfl.ch/people/susstrunk), ICIP 2011
 
+---
 
 <a name="courses"></a>
-### Courses
+### <span class="glyphicon glyphicon-list"></span> Courses
 
 [Master courses](courses/master.html)  
 [Bachelor courses](courses/bachelor.html)  
 [Course projects](courses/projects.html)  
 
+---
 
-### Personal projects
+### <span class="glyphicon glyphicon-send"></span> Personal projects
 [LytroGL: an OpenGL image-based rendering viewer for Lytro images](light-field/2014/02/20/lytrogl.html)
 
 [Parallax timelapse photography with static light field capture](light-field/2014/02/20/light-field-timelapse.html)
@@ -39,7 +43,7 @@ title: Damien Firmenich
 
 ----
 <a name="contact"></a>
-#### Contact
+### <span class="glyphicon glyphicon-user"></span> Contact
 
 [curriculum vitae](https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/damien-firmenich.pdf)
 
