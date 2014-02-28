@@ -45,8 +45,6 @@ title: Damien Firmenich
 <a name="contact"></a>
 ### <span class="glyphicon glyphicon-user"></span> Contact
 
-[curriculum vitae](https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/damien-firmenich.pdf)
-
 fir dot damien at gmail dot com
 
 <a href="https://github.com/damienfir">GitHub</a>  
