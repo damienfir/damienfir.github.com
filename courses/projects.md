@@ -9,7 +9,7 @@ title: Course projects
 
 Digital 3D Geometry Processing
 
-- [3D Statue Modeling from Photos](projects/statues)  
+- [3D Statue Modeling from Photos](/projects/statues)  
 	We captured a real statue from 360° with a camera, then used multiview reconstruction algorithms to creat a 3D model of the statue. After digital mesh processing to smooth and denoise the 3D model, we used the Cube 3D printer to create a miniature solid object of the statue.
 
 Pattern classification and machine learning
