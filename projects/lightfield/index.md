@@ -31,16 +31,12 @@ In this project, we propose a simple and practical method to measure the SFR of 
 By using a 3-dimensional target made of vertical lines printed on an inclined planar surface, we are able to measure the SFR across multiple depths in a single exposure. Our method allows SFR measurements from the raw light field itself as captured by the camera, and is thus independent of subsequent post-processing algorithms such as image reconstruction, digital refocusing or depth estimation. Our experimental results are consistent with theoretical bounds and reproducible.
 </p>
 
-<a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/sfr_plenoptic_firmenich.pdf">Thesis report [pdf]</a><br/>
-<a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/firmenich_lightfield_sfr_icip.pdf">Slides [pdf]</a><br/>
-<a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/firmenich_lightfield_sfr_slides.pdf">Paper [pdf]</a> (submitted for ICIP 2014)
+<h4>Project resources</h4>
+<ul>
+<li><a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/sfr_plenoptic_firmenich.pdf">Thesis report [pdf]</a><br/>
+<li><a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/firmenich_lightfield_sfr_icip.pdf">Slides [pdf]</a><br/>
+<li><a href="https://dl.dropboxusercontent.com/u/6168035/damienfirmenich.com/firmenich_lightfield_sfr_slides.pdf">Paper [pdf]</a> (submitted for ICIP 2014)
+</ul>
 
 </div>
-<div class="col-md-2">
 </div>
-</div>
-
-
----
-
-<center>[![EPFL](epfl.jpg)](http://www.epfl.ch)</center>
