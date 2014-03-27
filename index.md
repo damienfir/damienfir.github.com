@@ -24,15 +24,6 @@ title: Damien Firmenich
 
 ---
 
-<a name="courses"></a>
-### <span class="glyphicon glyphicon-list"></span> Courses
-
-[Master courses](courses/master.html)  
-[Bachelor courses](courses/bachelor.html)  
-[Course projects](courses/projects.html)  
-
----
-
 ### <span class="glyphicon glyphicon-send"></span> Personal projects
 [LytroGL: an OpenGL image-based rendering viewer for Lytro images](light-field/2014/02/20/lytrogl.html)
 
@@ -40,6 +31,15 @@ title: Damien Firmenich
 
 [Realtime Water Rendering using Heightmaps](projects/water)
 
+
+---
+
+<a name="courses"></a>
+### <span class="glyphicon glyphicon-list"></span> Courses
+
+[Master courses](courses/master.html)  
+[Bachelor courses](courses/bachelor.html)  
+[Course projects](courses/projects.html)  
 
 ----
 <a name="contact"></a>
