@@ -49,6 +49,7 @@ fir dot damien at gmail dot com
 
 <a href="https://github.com/damienfir"><i class="fa fa-github-square fa-2x"></i></a>
 <a href="http://www.flickr.com/photos/damienfir/"><i class="fa fa-flickr fa-2x"></i></a>
+<a href="http://ch.linkedin.com/in/damienfirmenich/"><i class="fa fa-linkedin-square fa-2x"></i></a>
 
 ----
 
