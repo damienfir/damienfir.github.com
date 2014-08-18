@@ -6,6 +6,8 @@ title: Damien Firmenich
 <a name="projects"></a>
 ### <span class="glyphicon glyphicon-book"></span> Publications
 
+[A Practical Method for Measuring the Spatial Frequency Response of Light Field Cameras](), D. Firmenich, L. Baboulaz, S. Süsstrunk, ICIP 2014
+
 [Multispectral Interest Points for RGB-NIR Image Registration](projects/features), D. Firmenich, M. Brown, S. Süsstrunk, ICIP 2011
 
 ---
