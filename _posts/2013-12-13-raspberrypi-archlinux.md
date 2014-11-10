@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: template
 title: Raspberry Pi with Arch Linux ARM
 date: 2013-12-13
-category: linux
+categories: linux
 ---
 
 ### Installation

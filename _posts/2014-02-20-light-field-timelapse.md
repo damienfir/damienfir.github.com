@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: template
 title: Parallax timelapse photography with static light field capture
 date: 2014-02-20
-category: light-field
+categories: project lightfield
 ---
 
 Timelapse photography can be greatly enhanced by adding a parallax effect during the shooting. [This video](http://vimeo.com/80836225) is a good example of what can be achieved using a motorized devices to move the camera gradually over a long period of time. This method requires additional equipement, and is complex to setup. Due to its mechanical nature, it is prone to failure and can be slow. These limitations can be partially removed by using a light field camera, where the point of view can be changed slightly after the exposure.

@@ -1,0 +1,20 @@
+<h3><strong>Damien Firmenich</strong></h3>
+
+<a href="https://github.com/damienfir"><i class="fa fa-github-square fa-2x"></i></a>
+<a href="http://www.flickr.com/photos/damienfir/"><i class="fa fa-flickr fa-2x"></i></a>
+<a href="http://ch.linkedin.com/in/damienfirmenich/"><i class="fa fa-linkedin-square fa-2x"></i></a>
+
+<hr>
+
+<ul class="list-unstyled">
+    <li><a href="/publications.html"><span class="glyphicon glyphicon-book"></span> Publications</a></li>
+    <li><a href="/projects.html"><span class="glyphicon glyphicon-send"></span> Projects</a></li>
+    <li><a href="/courses.html"><span class="glyphicon glyphicon-list"></span> Courses</a></li>
+</ul>
+
+<hr>
+<ul class="list-unstyled">
+{% for post in site.posts %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> <small>[{{ post.date | date_to_string }}]</small></li>
+{% endfor %}
+</ul>

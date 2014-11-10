@@ -1,3 +1,4 @@
 name: Damien Firmenich
 markdown: redcarpet
 highlighter: true
+permalink: /:year/:month/:day/:title.html

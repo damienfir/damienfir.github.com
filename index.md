@@ -1,10 +1,9 @@
 ---
 layout: template
-title: Damien Firmenich
 ---
 
 <a name="projects"></a>
-### <span class="glyphicon glyphicon-book"></span> Publications
+### 
 
 [A Practical Method for Measuring the Spatial Frequency Response of Light Field Cameras](), D. Firmenich, L. Baboulaz, S. Süsstrunk, ICIP 2014
 
@@ -12,7 +11,7 @@ title: Damien Firmenich
 
 ---
 
-### <span class="glyphicon glyphicon-bookmark"></span> Academic projects
+### 
 
 [Spatial Frequency Response of a Plenoptic Camera](projects/lightfield), Damien Firmenich, [Loïc Baboulaz](http://lcav.epfl.ch/page-77949-en.html), Sabine Süsstrink, Master Thesis, January 2014
 
@@ -26,33 +25,9 @@ title: Damien Firmenich
 
 ---
 
-### <span class="glyphicon glyphicon-send"></span> Personal projects
+### 
 [LytroGL: an OpenGL image-based rendering viewer for Lytro images](light-field/2014/02/20/lytrogl.html)
 
 [Parallax timelapse photography with static light field capture](light-field/2014/02/20/light-field-timelapse.html)
 
 [Realtime Water Rendering using Heightmaps](projects/water)
-
-
----
-
-<a name="courses"></a>
-### <span class="glyphicon glyphicon-list"></span> Courses
-
-[Master courses](courses/master.html)  
-[Bachelor courses](courses/bachelor.html)  
-[Course projects](courses/projects.html)  
-
-----
-<a name="contact"></a>
-### <span class="glyphicon glyphicon-user"></span> Contact
-
-fir dot damien at gmail dot com
-
-<a href="https://github.com/damienfir"><i class="fa fa-github-square fa-2x"></i></a>
-<a href="http://www.flickr.com/photos/damienfir/"><i class="fa fa-flickr fa-2x"></i></a>
-<a href="http://ch.linkedin.com/in/damienfirmenich/"><i class="fa fa-linkedin-square fa-2x"></i></a>
-
-----
-
-<small>last update: August 2014</small>
