@@ -7,14 +7,8 @@
 <hr>
 
 <ul class="list-unstyled">
-    <li><a href="/publications.html"><span class="glyphicon glyphicon-book"></span> Publications</a></li>
-    <li><a href="/projects.html"><span class="glyphicon glyphicon-send"></span> Projects</a></li>
-    <li><a href="/courses.html"><span class="glyphicon glyphicon-list"></span> Courses</a></li>
-</ul>
-
-<hr>
-<ul class="list-unstyled">
-{% for post in site.posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a> <small>[{{ post.date | date_to_string }}]</small></li>
-{% endfor %}
+    <li><a href="/2014/01/01/publications.html"><span class="glyphicon glyphicon-book"></span> Publications</a></li>
+    <li><a href="/2014/01/01/projects.html"><span class="glyphicon glyphicon-send"></span> Projects</a></li>
+    <li><a href="/2014/01/01/courses.html"><span class="glyphicon glyphicon-list"></span> Courses</a></li>
+    <li><a href="/"><span class="glyphicon glyphicon-list"></span> Articles</a></li>
 </ul>

@@ -7,30 +7,19 @@
 	<title>{{ page.title }}</title>
 
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-    <style>
-    .sidebar {
-        position: fixed;
-        display: block;
-        bottom: 0;
-        left: 0;
-        top: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    </style>
+	<link rel="stylesheet" href="/assets/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-sm-3 sidebar">
+        <div class="col-sm-2 sidebar">
 	        {% include sidebar.html %}
         </div>
 
-        <div class="col-sm-9 col-sm-offset-3">
+        <div class="col-sm-10">
             {% include page.html %}
         </div>
     </div>

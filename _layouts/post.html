@@ -1,0 +1,23 @@
+{% include header.html %}
+
+<body>
+	{% include navbar.html %}
+	<div class="container">
+		<div class="page-header">
+			<h2>{{ page.title }}</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8">
+				{{ content }}
+			</div>
+		</div>
+
+		<hr />
+		<small> {{ page.date | date_to_string }}<br />
+			<em>[updated {{ site.time | date_to_string }}]</em></small>
+
+
+	</div>
+
+{% include footer.html %}
