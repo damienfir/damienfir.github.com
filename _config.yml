@@ -1,4 +1,4 @@
 name: Damien Firmenich
 markdown: redcarpet
-highlighter: true
+highlighter: pygments
 permalink: /:year/:month/:day/:title.html
