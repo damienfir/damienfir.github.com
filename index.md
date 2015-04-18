@@ -1,4 +1,5 @@
 ---
+title: Damien Firmenich
 layout: template
 ---
 
