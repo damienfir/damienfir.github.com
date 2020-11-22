@@ -1,0 +1,45 @@
+I"Î<p>One of the wireless module that comes on the Lenovo T450s or T440s is the Realtek 8192ee, which has bad support out of the box on Arch Linux (or Ubuntu).</p>
+
+<p>The solution that fixed my setup is the following:</p>
+
+<ol>
+  <li>
+    <p>Get the latest driver from the repo <a href="https://github.com/lwfinger/rtlwifi_new">https://github.com/lwfinger/rtlwifi_new</a></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git clone git@github.com:lwfinger/rtlwifi_new.git
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Compile them on your system</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd rtlwifi_new
+ make
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install them</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo make install
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Reboot</p>
+  </li>
+</ol>
+
+<p>The kernel module should be automatically loaded when the system boots. If not, load them with the following command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo modprobe rtl8192ee
+</code></pre></div></div>
+
+<p>The step <code class="language-plaintext highlighter-rouge">3.</code> is to be <strong>repeated after every kernel update</strong>.</p>
+
+<p>If you are still having problem connecting to an encrypted network, add the following options to the module</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "options rtl8192ee swenc=1" &gt; /etc/modprobe.d/rtl8192ee.conf
+sudo rmmod rtl8192ee
+sudo modprobe rtl8192ee
+</code></pre></div></div>
+
+<p>Also, according to <a href="https://github.com/mvklingeren">mvklingeren</a>, if you still have problem connecting try to <strong>disable the 802.11n</strong> in your router/access point settings.</p>
+:ET

@@ -1,0 +1,6 @@
+I"G<p>With a focus on fluid interactivity while manipulating RAW images, <strong>exposure</strong> is implemented with OpenCL in mind. It is written in C++ with GTK for the user interface.</p>
+
+<p>Image processing is a task particularly well suited for GPU processing, as most filters operate pixel-wise and hence can be ran in parallel on a single image. <strong>exposure</strong> aims to bring state-of-the-art digital negative development to the Linux desktop for photographers.</p>
+
+<p>The source code is available on <a href="https://github.com/damienfir/exposure">github</a>.</p>
+:ET

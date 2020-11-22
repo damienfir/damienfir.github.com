@@ -1,0 +1,19 @@
+I"B<p>My configuration:</p>
+
+<ul>
+  <li>Lenovo Thinkpad T420, i7-2620M, Nvidia 4200M Optimus</li>
+  <li>Arch Linux</li>
+</ul>
+
+<h3 id="cannot-boot-on-discrete-graphics-only">Cannot boot on discrete graphics only</h3>
+
+<p><strong>Problem</strong>: When deactivating the integrated graphics completely (disabling Optimus technology), the boot process stops after loading the <em>initramfs</em> for some problem with hardware interrupts implemented by APIC.</p>
+
+<p><strong>Solution</strong>: Adding the option <code class="language-plaintext highlighter-rouge">noapic</code> to the grub configuration disables APIC interrupts and allows the boot process to overcome the issue.</p>
+
+<h3 id="white-screen-only-when-booting-the-computer">White screen only when booting the computer</h3>
+
+<p><strong>Problem</strong>: The computer boots directly to a blank white screen without any boot screen, but the computer is working fine. An external monitor can be plugged in and allows you to use the OS.</p>
+
+<p><strong>Solution</strong>: Very simple solution involving nothing but checking the connection from the motherboard to the display. There is two connection, power and video. Mine had the power cable correctly plugged in, so the brightness was working. But no video data was sent to the screen because of a slight misconnection on the motherboard.</p>
+:ET
