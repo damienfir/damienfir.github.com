@@ -3,8 +3,9 @@ import os.path
 import subprocess
 from datetime import datetime
 from feedgen.feed import FeedGenerator
+import sys
 
-build_folder = "build"
+build_folder = sys.argv[1]
 last_update = datetime.now().strftime("%Y-%m-%d")
 fg = FeedGenerator()
 fg.title("Damien Firmenich")

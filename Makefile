@@ -3,12 +3,12 @@ all: build
 .PHONY: build
 
 build:
-	python build.py
-	-mkdir build/static
-	cp -r static/* build/static/
+	python build.py docs
+	-mkdir docs/static
+	cp -r static/* docs/static/
 
 serve:
-	cd build && python -m http.server
+	cd docs && python -m http.server
 
 publish: build
 	git add .
