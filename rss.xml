@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Damien Firmenich</title>
+    <link>http://www.damienfirmenich.com</link>
+    <description>desc</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Wed, 19 Jan 2022 16:23:25 +0000</lastBuildDate>
+    <item>
+      <title>Devlog #0</title>
+      <description>&lt;!doctype html&gt;
+
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Devlog #0&lt;/title&gt;
+
+    &lt;link rel="stylesheet" href="/static/style.css"&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Devlog #0&lt;/h1&gt;
+&lt;h2&gt;The game&lt;/h2&gt;
+&lt;p&gt;So I'm developing a puzzle game about teleportation through portals. Yes, it
+probably sounds like &lt;a href=""&gt;something&lt;/a&gt; you've played before, but this one (probably)
+won't have a lot of physics and will be played on a 2D grid.&lt;/p&gt;
+&lt;p&gt;The game doesn't have a name yet. So I will call it The game for now.&lt;/p&gt;
+&lt;p&gt;I am not sure what the final look and feel will be, but I'm thinking a semi-open
+world where you encounter the puzzle as you explore. My inspiration for the game
+were (non-exhaustively):
+- Monster's Expedition for its interesting mechanics and
+nice look,
+- The Witness, because I love that game,
+- and obviously Portal&lt;/p&gt;
+&lt;p&gt;At first, I had the idea of making a game where you can teleport anywhere in
+your line of sight. But it turned out to be too hard to make good levels because
+the player could only teleport to platforms that are "under" you. Then I tried
+switching to a 2D top-down view where the same mechanic applied. However the
+teleportation turned to be way too powerful, which made it too hard to design
+challenging levels.&lt;/p&gt;
+&lt;p&gt;So my solution was to merge that idea with Portal's... portals. And also to put
+the player on a grid to reduce the degrees of freedom, hence make it easier to
+design levels.&lt;/p&gt;
+&lt;p&gt;More details on the mechanics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The player moves on a 2D grid, with a view from above. The goal is to exit the level (the red tile for now).&lt;/li&gt;
+&lt;li&gt;The portals are placed on the side of blocks, either movable or not (walls).&lt;/li&gt;
+&lt;li&gt;There are doors with buttons to press (with the player or a block standing on
+  it).&lt;/li&gt;
+&lt;li&gt;There are buttons that deactivates the tunnel (the path between two portals)
+  of the same color.&lt;/li&gt;
+&lt;li&gt;The player can undo/reset indefinitely to encourage exploration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By the way, I took a lot of tips from that &lt;a href="https://www.youtube.com/watch?v=oCHciE9CYfA"&gt;series&lt;/a&gt; &lt;a href="https://www.youtube.com/watch?v=iUi2vMZajco"&gt;of&lt;/a&gt; &lt;a href="https://www.youtube.com/watch?v=zsbfkMuaUxs"&gt;video&lt;/a&gt; by Elyot Grant about puzzle design. Highly recommended.&lt;/p&gt;
+&lt;h2&gt;Development so far&lt;/h2&gt;
+&lt;p&gt;I first developed a prototype in Python (with
+&lt;a href="https://api.arcade.academy/en/latest/"&gt;Arcade&lt;/a&gt;), which allowed me to explore
+different ideas quickly and zero-in on a specific set of mechanics that allows
+interesting levels.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python prototype" src="/static/content/0-python-prototype.png" /&gt;&lt;/p&gt;
+&lt;p&gt;For the rest of the development, I will switch away from Python and use
+&lt;a href="https://ziglang.org/"&gt;Zig&lt;/a&gt; instead. Why Zig and not something like C++ ?
+Because I like to try something new, and Zig is a great compromise between being
+low-level and encouraging correctness. Time will tell if it was a wise choice to
+start a long-term project with such a young and unstable language. But I'm
+hopeful and supportive of Zig's team and their core values.&lt;/p&gt;
+&lt;p&gt;All the basic mechanics are implemented. It just looks very raw but it will
+allow me to work on designing more levels.&lt;/p&gt;
+&lt;h2&gt;New this week&lt;/h2&gt;
+&lt;h3&gt;Animations&lt;/h3&gt;
+&lt;p&gt;This week I focused on making the game look slightly better by adding some
+animations to the movement of the player and the blocks. It makes it easier to
+see what is happening, especially when you go through a portal.&lt;/p&gt;
+&lt;p&gt;The animation is made smooth by using the
+&lt;a href="https://en.wikipedia.org/wiki/Smoothstep"&gt;smootherstep&lt;/a&gt; function by Ken Perlin.
+It is a sigmoid-style easing function that make the animation start slow and end slow.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="animations screencast" src="/static/content/0-peek-animation.gif" /&gt;&lt;/p&gt;
+&lt;h3&gt;Undo/reset&lt;/h3&gt;
+&lt;p&gt;The undo feature makes it easy for the player to explore different solution
+without restarting the level if he gets stuck.&lt;/p&gt;
+&lt;p&gt;My implementation of undo is based on keeping a stack of game state. Appending
+to the stack on every move and popping out the last state for undo. Reset is achieved
+by taking the first element of the stack.&lt;/p&gt;
+&lt;p&gt;I can do that since the state is very small, it contains only the player's and
+the blocks' positions. We'll see how it evolves.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="undo screencast" src="/static/content/0-peek-undo.gif" /&gt;&lt;/p&gt;
+&lt;h3&gt;Camera view rotation&lt;/h3&gt;
+&lt;p&gt;I have a problem in my game design. Since there are 3D blocks that can have
+portals on all sides, there will be some portals that the player can't see. How
+do I make them visible to the player ? There are a few solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make the blocks transparent. This might be confusing, it is harder
+    to implement, and it severely constrains how the game can look like. You
+    basically need glass blocks and glass walls.&lt;/li&gt;
+&lt;li&gt;Make the portals glow, such that you can see them shine on the floor and
+    other objects. Again, this might be confusing. It also forces the floor to
+    be white.&lt;/li&gt;
+&lt;li&gt;Allow the player to turn the camera. The easiest solution to implement and
+    the more flexible one. The problem is that the player can't see the whole
+    level at once.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I went with the third solution because it is the easiest to implement, which
+allows me to move on to other problems.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="camera rotation screencast" src="/static/content/0-peek-rotate-camera.gif" /&gt;&lt;/p&gt;
+&lt;h2&gt;What's next&lt;/h2&gt;
+&lt;p&gt;I'm planning to design more puzzles to test these mechanics. It is also a great
+way of discovering the consequences of these mechanics (often because of bugs).
+By discovering these consequences, you can make more interesting levels that
+present these consequences to the player. More info in &lt;a href="https://www.youtube.com/watch?v=3BE9y2p01KU"&gt;this video&lt;/a&gt; by
+Jonathan Blow and Marc ten Bosch.&lt;/p&gt;
+&lt;p&gt;--&lt;/p&gt;
+&lt;p&gt;Published on 2021-01-19&lt;/p&gt;
+&lt;p&gt;&lt;a href="/"&gt;Back home&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</description>
+      <author>fir.damien@gmail.com (Damien Firmenich)</author>
+      <pubDate>Mon, 18 Jan 2021 23:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

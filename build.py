@@ -1,46 +1,57 @@
-import json
-import os.path
-import subprocess
-from datetime import datetime
+import os
+from datetime import datetime, timezone
+from markdown import markdown
 from feedgen.feed import FeedGenerator
-import sys
 
-home_link = """
-<div><a href="/">Back</a></div>
-"""
+# Generate list of posts on main page (with date and title)
+# - separate pages from blog posts
 
-build_folder = sys.argv[1]
-last_update = datetime.now().strftime("%Y-%m-%d")
-fg = FeedGenerator()
-fg.title("Damien Firmenich")
-fg.link(href='http://example.com', rel='alternate')
-fg.description("asdfsa")
+pages = os.listdir("pages_")
+os.makedirs("pages", exist_ok=True)
 
 with open("template.html") as fp:
     template = fp.read()
 
-for post_name in os.listdir("pages") + [""]:
-    home = home_link if post_name else ""
-    post_folder = os.path.join("pages", post_name)
-    if not os.path.isdir(post_folder):
-        continue
+feed = FeedGenerator()
+feed.title("Damien Firmenich")
+feed.link(href="http://www.damienfirmenich.com", rel="alternate")
+feed.description("desc")
 
-    with open(os.path.join(post_folder, "meta.json")) as fp:
-        meta = json.load(fp)
+for page in pages:
+    path = os.path.join("pages_", page)
+    print("processing", path)
 
-    content = subprocess.check_output(
-        ["pandoc", os.path.join(post_folder, "index.md")]).decode("utf-8")
+    with open(path) as fp:
+        content = fp.read().split("---")
+    front_matter = content[1]
+    main = content[2]
 
-    out_folder = os.path.join(build_folder, post_name)
-    os.makedirs(out_folder, exist_ok=True)
+    meta = {}
+    for line in front_matter.splitlines():
+        if not line:
+            continue
+        key, val = line.split(":")
+        key = key.strip()
+        val = val.strip()
+        if key == "date":
+            val = datetime.strptime(val, "%Y-%m-%d")
+            val = val.astimezone(timezone.utc)
+        meta[key] = val
 
-    content = content.format(last_update=last_update)
-    templated = template.format(content=content, home=home, **meta)
-    with open(os.path.join(out_folder, "index.html"), 'w') as fp:
+    html = markdown(main)
+    templated = template.format(content=html, **meta)
+
+    out_path = os.path.join("pages", page.split(".")[0] + ".html")
+    with open(out_path, 'w') as fp:
         fp.write(templated)
 
-    fe = fg.add_entry()
-    fe.title(post_name)
-    fe.description("test")
+    entry = feed.add_entry()
+    entry.title(meta['title'])
+    entry.published(meta['date'])
+    entry.author([{
+        "name": "Damien Firmenich",
+        "email": "fir.damien@gmail.com"
+    }])
+    entry.content(templated)
 
-fg.rss_file(os.path.join(build_folder, "rss.xml"), pretty=True)
+feed.rss_file("rss.xml", pretty=True)

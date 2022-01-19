@@ -3,19 +3,27 @@ body {
   margin: 20px auto;
   line-height: 1.4;
   color: #333333;
+  font-family: monospace;
+  font-size: 1.2em;
 }
 
-h1 {
-    font-family: monospace;
-    font-size: 2em;
-}
+/* h1 { */
+/*     font-family: monospace; */
+/*     font-size: 2em; */
+/* } */
 
-h2 {
-    font-family: monospace;
-    font-size: 1.5em;
-}
+/* h2 { */
+/*     font-family: monospace; */
+/*     font-size: 1.7em; */
+/* } */
 
-h4 {
-    font-family: monospace;
-    font-size: 1em;
-}
+/* h3 { */
+/*     font-family: monospace; */
+/*     font-size: 1.5em; */
+/*     color: #444; */
+/* } */
+
+/* h4 { */
+/*     font-family: monospace; */
+/*     font-size: 1.2em; */
+/* } */
