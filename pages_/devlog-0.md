@@ -124,6 +124,8 @@ Jonathan Blow and Marc ten Bosch.
 
 --
 
+[Comments](https://www.reddit.com/r/dfcomments/comments/s8bp0c/devlog_0/)
+
 Published on 2021-01-19
 
 [Back home](/)
