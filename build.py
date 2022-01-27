@@ -41,7 +41,8 @@ for page in pages:
     html = markdown(main)
     templated = template.format(content=html, **meta)
 
-    out_path = os.path.join("pages", page.split(".")[0] + ".html")
+    page_name = page.split(".")[0]
+    out_path = os.path.join("pages", page_name + ".html")
     with open(out_path, 'w') as fp:
         fp.write(templated)
 
@@ -52,6 +53,9 @@ for page in pages:
         "name": "Damien Firmenich",
         "email": "fir.damien@gmail.com"
     }])
+    url = "https://damienfir.github.io/pages/{}.html".format(page_name)
+    entry.link(href=url)
+    entry.id(url)
     entry.content(templated)
 
 feed.rss_file("rss.xml", pretty=True)
